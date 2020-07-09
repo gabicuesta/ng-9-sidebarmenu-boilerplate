@@ -1,0 +1,14 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" class="sidenav">
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="height: 100vh;">
+        <div>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="sidenav.toggle()">menu</mat-icon>
+        </div>
+
+        <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
